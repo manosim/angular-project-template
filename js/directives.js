@@ -1,4 +1,4 @@
-angular.module('directives',[
+angular.module('directives', [
 
     // Set Directives
     'directives.exampleDirective',

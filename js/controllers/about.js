@@ -1,5 +1,4 @@
-var app = angular.module('controllers.about', ['']);
-
+var app = angular.module('controllers.about', ['ngRoute', 'ui.bootstrap']);
 
 app.controller("AboutCtrl", function($scope) {
 

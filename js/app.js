@@ -23,11 +23,3 @@ app.config(['$routeProvider',
     });
 
 }]);
-
-app.controller('HomeCtrl', function($scope) {
-    $scope.title = "Homepage";
-});
-
-app.controller('AboutCtrl', function($scope) {
-    $scope.title = "About";
-});

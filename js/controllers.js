@@ -1,7 +1,8 @@
-angular.module('controllers',[
+angular.module('controllers', [
 
     // Set Controllers
-    'controllers.home',
     'controllers.header',
+    'controllers.home',
+    'controllers.about',
 
 ]);

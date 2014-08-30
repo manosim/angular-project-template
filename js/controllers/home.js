@@ -1,5 +1,4 @@
-var app = angular.module('controllers.home', ['']);
-
+var app = angular.module('controllers.home', ['ngRoute', 'ui.bootstrap']);
 
 app.controller("HomeCtrl", function($scope, $location) {
 
