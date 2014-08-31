@@ -1,19 +1,19 @@
 Angular Project Template
 =======================
 
-A **nice** and **clean** Angualar project template.
+A **clean** Angualar project template.
 
 ### Using
 
-- Angular 1.2.23
-- Angular Route
-- UI Bootstrap
-- Boostrap 3.2.0 (only CSS)
+- Angular 1.2.23 ([More](http://www.angularjs.org/))
+- Angular Route 1.2.23 ([More](http://www.angularjs.org/))
+- UI Bootstrap 0.11.0 ([More](http://angular-ui.github.io/bootstrap))
+- Boostrap 3.2.0 (only CSS) ([More](http://www.getbootstrap.com/))
 
 ### Also
-- Responsive Navbar using UI Boostrap
-- Active Link (in Header Controler, `HeaderCtrl`)
 
+- Responsive Navbar using UI Boostrap
+- Active Link (in Header Contrloler, `HeaderCtrl`)
 
 ### Files Struture
 
