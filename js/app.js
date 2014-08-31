@@ -3,6 +3,7 @@ var app = angular.module('projectName', [
     'ui.bootstrap',
     'controllers',
     'directives',
+    'services',
 ]);
 
 app.config(['$routeProvider',
