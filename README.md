@@ -13,7 +13,7 @@ A **clean** Angualar project template.
 ### Also
 
 - Responsive Navbar using UI Boostrap
-- Active Link (in Header Contrloler, `HeaderCtrl`)
+- Active Link (in Header Controller, `HeaderCtrl`)
 
 ### Files Struture
 
