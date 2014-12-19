@@ -4,11 +4,22 @@ module.exports = function(grunt) {
 
     watch: {
       files: 'src/**/*.*',
-      tasks: ['less']
+      tasks: ['less', 'copy']
+    },
+
+    copy: {
+        main: {
+            files: [
+                {expand: true, cwd: "src/", src: 'index.html', dest: 'build/'},
+                {expand: true, cwd: "src/images/", src: '**', dest: 'build/images/'},
+                {expand: true, cwd: "lib/bootstrap/fonts/", src: '**', dest: 'build/fonts/'},
+                {expand: true, cwd: "src/fonts/", src: '**', dest: 'build/fonts/'},
+            ]
+        }
     },
 
     less: {
-        targetname: {
+        main: {
           expand: true,
           flatten: true,
           src:  ['src/less/*.less'],
@@ -20,6 +31,7 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
 
   grunt.registerTask('default', ['watch']);
