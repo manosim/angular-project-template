@@ -1,14 +1,14 @@
 Angular Project Template
 =======================
 
-A **clean** Angualar project template.
+A **clean** Angular project template.
 
 ### Using
 
-- Angular 1.2.23 ([More](http://www.angularjs.org/))
-- Angular Route 1.2.23 ([More](http://www.angularjs.org/))
-- UI Bootstrap 0.11.0 ([More](http://angular-ui.github.io/bootstrap))
-- Boostrap 3.2.0 (only CSS) ([More](http://www.getbootstrap.com/))
+- Angular 1.3.7 ([More](http://www.angularjs.org/))
+- Angular Route 1.3.7 ([More](http://www.angularjs.org/))
+- UI Bootstrap 0.12.0 ([More](http://angular-ui.github.io/bootstrap))
+- Boostrap 3.3.1 (only CSS) ([More](http://www.getbootstrap.com/))
 
 ### Also
 
