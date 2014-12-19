@@ -1,7 +1,7 @@
 Angular Project Template
 =======================
 
-A **clean** Angualar project template.
+A **clean** Angular project template.
 
 ### Using
 
