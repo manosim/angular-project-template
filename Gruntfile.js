@@ -4,7 +4,13 @@ module.exports = function(grunt) {
 
     watch: {
       files: 'src/**/*.*',
-      tasks: ['less', 'copy']
+      tasks: ['jshint', 'less', 'copy']
+    },
+
+    jshint: {
+      dev: {
+        src: ['src/js/**/*.js']
+      }
     },
 
     copy: {
@@ -33,6 +39,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   grunt.registerTask('default', ['watch']);
 
