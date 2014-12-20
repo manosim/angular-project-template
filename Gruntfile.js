@@ -44,6 +44,7 @@ module.exports = function(grunt) {
         options: {
           open: true,
           base: 'build',
+          keepalive: true,
           useAvailablePort: true,
         }
       }
@@ -59,5 +60,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['build']);
   grunt.registerTask('build', ['jshint', 'less', 'copy']);
-  grunt.registerTask('serve', ['connect:server', 'watch']);
+  grunt.registerTask('serve', ['build', 'connect:server']);
 };
