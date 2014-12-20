@@ -44,7 +44,6 @@ module.exports = function(grunt) {
         options: {
           open: true,
           base: 'build',
-          keepalive: true,
           useAvailablePort: true,
         }
       }
@@ -58,6 +57,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  grunt.registerTask('default', ['watch']);
-
+  grunt.registerTask('default', ['build']);
+  grunt.registerTask('build', ['jshint', 'less', 'copy']);
+  grunt.registerTask('serve', ['connect:server', 'watch']);
 };
