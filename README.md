@@ -3,7 +3,7 @@ Angular Project Template [![Build Status](https://travis-ci.org/ekonstantinidis/
 
 A **clean** Angular project template.
 
-### Using
+## Using
 
 - Angular 1.3.7 ([More](http://www.angularjs.org/))
 - Angular Route 1.3.7 ([More](http://www.angularjs.org/))
@@ -12,7 +12,7 @@ A **clean** Angular project template.
 - Font Awesome 4.2.0 ([More](http://fontawesome.io/))
 
 
-### Grunt
+## Grunt
 
 - grunt ([More](http://gruntjs.com/))
 - grunt-contrib-watch ([More](https://github.com/gruntjs/grunt-contrib-watch))
@@ -22,12 +22,12 @@ A **clean** Angular project template.
 - grunt-contrib-connect ([More](https://github.com/gruntjs/grunt-contrib-connect))
 
 
-### Also
+## Also
 
 - Responsive Navbar using UI Boostrap
 - Active Link (in Header Controller, `HeaderCtrl`)
 
-### Files Struture
+## Files Struture
 
     project-name/
     	-- build
