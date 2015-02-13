@@ -1,4 +1,4 @@
-Angular Project Template [![Build Status](https://travis-ci.org/ekonstantinidis/angular-project-template.svg?branch=master)](https://travis-ci.org/ekonstantinidis/angular-project-template)
+Angular Project Template [![Build Status](https://travis-ci.org/TrevorDemo/angular-project-template.svg?branch=master)](https://travis-ci.org/TrevorDemo/angular-project-template)
 =======================
 
 A **clean** Angular project template.
