@@ -13,18 +13,29 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      main: {
+        src: [
+            'node_modules/angular/angular.js',
+            'node_modules/angular-ui-router/release/angular-ui-router.js',
+            'node_modules/angular-filter/dist/angular-filter.js',
+
+            'src/js/*.js',
+            'src/js/**/*.js',
+        ],
+        dest: 'build/js/app.js'
+      }
+    },
+
     copy: {
       main: {
         files: [
-          {expand: true, cwd: "src/templates/", src: '**', dest: 'build/templates/'},
           {expand: true, cwd: "src/", src: 'index.html', dest: 'build/'},
-          {expand: true, cwd: "src/js/", src: '**', dest: 'build/js/'},
           {expand: true, cwd: "src/images/", src: '**', dest: 'build/images/'},
-          {expand: true, cwd: "src/lib/font-awesome/css/", src: '**', dest: 'build/css/'},
-          {expand: true, cwd: "src/lib/font-awesome/fonts/", src: '**', dest: 'build/fonts/'},
-          {expand: true, cwd: "src/lib/bootstrap/fonts/", src: '**', dest: 'build/fonts/'},
-          {expand: true, cwd: "src/lib/angular/", src: '**', dest: 'build/lib/'},
-          {expand: true, cwd: "src/lib/ui-bootstrap/", src: '**', dest: 'build/lib/'},
+          {expand: true, cwd: "src/templates/", src: '**', dest: 'build/templates/'},
+
+          {expand: true, cwd: "node_modules/bootstrap/fonts/", src: '**', dest: 'build/fonts/'},
+          {expand: true, cwd: "node_modules/font-awesome/fonts/", src:'**', dest: 'build/fonts/'}
         ]
       }
     },
@@ -48,17 +59,26 @@ module.exports = function(grunt) {
           useAvailablePort: true,
         }
       }
+    },
+
+    clean: {
+      build: {
+        src: ["build/*"]
+      }
     }
 
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['jshint', 'less', 'copy']);
+  grunt.registerTask('build', ['jshint', 'less', 'copy', 'concat']);
   grunt.registerTask('serve', ['build', 'connect:server']);
+  grunt.registerTask('release', ['clean', 'build']);
 };

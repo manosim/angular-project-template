@@ -1,38 +1,47 @@
-@import "../lib/bootstrap/less/bootstrap.less";
+@import "../../node_modules/bootstrap/less/bootstrap.less";
+@import "../../node_modules/font-awesome/less/font-awesome.less";
+
+
+/* @group Miscellaneous */
 
 body {
 
+    ::selection {
+        text-shadow: none;
+        color: #FFFFFF;
+        /*background: ;*/
+    }
+
+    ::-moz-selection {
+        text-shadow: none;
+        color: #FFFFFF;
+        /*background: ;*/
+    }
+
+    a {
+        /*color: ;*/
+        -webkit-transition:all .8s;
+        -moz-transition:all .8s;
+        transition:all .8s;
+
+        &:hover {
+            /*color: ;*/
+            text-decoration: none;
+        }
+    }
 }
 
-/* Text Selection */
-::selection {
-    text-shadow: none;
-    color: #FFFFFF;
-    /*background: ;*/
-}
+/* @end Miscellaneous */
 
-::-moz-selection {
-    text-shadow: none;
-    color: #FFFFFF;
-    /*background: ;*/
-}
 
-a {
-    /*color: ;*/
-    -webkit-transition:all .8s;
-    -moz-transition:all .8s;
-    transition:all .8s;
-}
+/* @group Footer */
 
-a:hover {
-    /*color: ;*/
-    text-decoration: none;
-}
-
-/* Custom page footer */
 .footer {
     padding: 25px 0;
 }
+
+/* @end Footer */
+
 
 /* Smartphones (portrait and landscape) */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

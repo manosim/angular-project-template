@@ -1,7 +1,6 @@
-var app = angular.module('controllers.about', ['ngRoute', 'ui.bootstrap']);
+var app = angular.module('controllers.about', []);
 
 app.controller("AboutCtrl", function($scope) {
-
     $scope.title = "About";
 
 });
