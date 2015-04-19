@@ -3,13 +3,32 @@ Angular Project Template [![Build Status](https://travis-ci.org/ekonstantinidis/
 
 A **clean** Angular project template.
 
-### Using
 
-- Angular 1.3.7 ([More](http://www.angularjs.org/))
-- Angular Route 1.3.7 ([More](http://www.angularjs.org/))
-- UI Bootstrap 0.12.0 ([More](http://angular-ui.github.io/bootstrap))
-- Boostrap 3.3.1 (LESS) ([More](http://www.getbootstrap.com/))
-- Font Awesome 4.2.0 ([More](http://fontawesome.io/))
+### Dependencies
+
+- Angular 1.3.15 ([More](http://www.angularjs.org/))
+- UI Router 0.2.13 ([More](http://www.angularjs.org/))
+- Boostrap 3.3.4 (LESS) ([More](http://www.getbootstrap.com/))
+- Font Awesome 4.3.0 ([More](http://fontawesome.io/))
+
+
+### Install
+To begin `cd` into the project directory and install the dependecies. Make sure your also have `grunt-cli`.
+
+    npm install -g grunt-cli
+    npm install
+
+
+### Run
+One of the dependecies is `grunt-contrib-connect`. It allows you to simply serve your project to your browser:
+
+    grunt serve
+
+
+### Tests
+There is only a `jshint` test. Also there is a `.travis.yml` file if you want to run `jshint` with every commit. To run the test locally:
+
+    npm test
 
 
 ### Grunt
@@ -17,20 +36,17 @@ A **clean** Angular project template.
 - grunt ([More](http://gruntjs.com/))
 - grunt-contrib-watch ([More](https://github.com/gruntjs/grunt-contrib-watch))
 - grunt-contrib-copy ([More](https://github.com/gruntjs/grunt-contrib-copy))
+- grunt-contrib-concat ([More](https://github.com/gruntjs/grunt-contrib-concat))
 - grunt-contrib-less ([More](https://github.com/gruntjs/grunt-contrib-less))
 - grunt-contrib-jshint ([More](https://github.com/gruntjs/grunt-contrib-jshint))
 - grunt-contrib-connect ([More](https://github.com/gruntjs/grunt-contrib-connect))
 
 
-### Also
-
-- Responsive Navbar using UI Boostrap
-- Active Link (in Header Controller, `HeaderCtrl`)
-
 ### Files Struture
 
     project-name/
     	-- build
+        -- node_modules/
     	-- src
 	        -- css/
 	        -- fonts/
@@ -46,11 +62,6 @@ A **clean** Angular project template.
 	            app.js
 	            controllers.js
 	            directives.js
-	        -- lib/
-            	-- angular/
-            	-- bootstrap/
-				-- ui-boostrap/
-				-- font-awesome/
 			-- templates
 				about.html
 				home.html
