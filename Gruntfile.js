@@ -86,6 +86,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['build']);
   grunt.registerTask('build', ['jshint', 'less', 'copy', 'concat']);
-  grunt.registerTask('serve', ['build', 'connect:server']);
+  grunt.registerTask('serve', ['clean', 'build', 'connect:server']);
   grunt.registerTask('release', ['clean', 'build']);
 };

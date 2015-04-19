@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="projectName">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
 
   </head>
 
-    <body ng-app="projectName">
+    <body>
 
         <div class="container">
             <div class="row">
@@ -27,13 +27,9 @@
                     <div ng-controller="HeaderCtrl" class="navbar navbar-default navbar-static-top" role="navigation">
                         <div class="container-fluid">
                             <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <i class="fa fa-bars"></i>
-                                </button>
-                                <a class="navbar-brand" href="#/home">Project Title</a>
+                                <a class="navbar-brand" ui-sref="home">Project Title</a>
                             </div>
-                            <div class="navbar-collapse collapse" collapse="navCollapsed" ng-click="navCollapsed=true">
+                            <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li ng-class="{ active: isActive('/home') }"><a ui-sref="home">Home</a></li>
                                     <li ng-class="{ active: isActive('/about') }"><a ui-sref="about">About</a></li>
@@ -43,7 +39,7 @@
                     </div>
 
                     <!-- Angular View -->
-                    <ng-view></ng-view>
+                    <ui-view></ui-view>
 
                     <!-- Footer -->
                     <div class="footer">
