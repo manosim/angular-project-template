@@ -1,48 +1,54 @@
-@import "../lib/bootstrap/less/bootstrap.less";
+@import "../../node_modules/bootstrap/less/bootstrap.less";
+@import "../../node_modules/font-awesome/less/font-awesome.less";
+
+/* @group Colors */
+
+    @White: #FFF;
+    @Silver: #DEDEDE;
+
+/* @end Colors */
+
+
+/* @group Miscellaneous */
 
 body {
+    padding-top: 65px;
 
-}
-
-/* Text Selection */
-::selection {
-    text-shadow: none;
-    color: #FFFFFF;
-    /*background: ;*/
-}
-
-::-moz-selection {
-    text-shadow: none;
-    color: #FFFFFF;
-    /*background: ;*/
-}
-
-a {
-    /*color: ;*/
-    -webkit-transition:all .8s;
-    -moz-transition:all .8s;
-    transition:all .8s;
-}
-
-a:hover {
-    /*color: ;*/
-    text-decoration: none;
-}
-
-/* Custom page footer */
-.footer {
-    padding: 25px 0;
-}
-
-/* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-    body {
-        padding: 0;
+    ::selection {
+        text-shadow: none;
+        color: #FFFFFF;
+        /*background: ;*/
     }
 
-    .footer {
-        padding: 10px 0;
+    ::-moz-selection {
+        text-shadow: none;
+        color: #FFFFFF;
+        /*background: ;*/
     }
 
+    a {
+        /*color: ;*/
+        -webkit-transition:all .8s;
+        -moz-transition:all .8s;
+        transition:all .8s;
+
+        &:hover {
+            /*color: ;*/
+            text-decoration: none;
+        }
+    }
 }
+
+/* @end Miscellaneous */
+
+
+/* @group Home Page */
+
+.home-page {
+
+    .img-responsive {
+        margin: 50px auto;
+    }
+}
+
+/* @end Home Page */
