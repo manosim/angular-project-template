@@ -31,7 +31,7 @@ There is only a `jshint` test. Also there is a `.travis.yml` file if you want to
     npm test
 
 
-### Grunt
+### Grunt Plugins
 
 - grunt ([More](http://gruntjs.com/))
 - grunt-contrib-watch ([More](https://github.com/gruntjs/grunt-contrib-watch))
@@ -48,8 +48,6 @@ There is only a `jshint` test. Also there is a `.travis.yml` file if you want to
     	-- build
         -- node_modules/
     	-- src
-	        -- css/
-	        -- fonts/
 	        -- images/
 	        -- js/
 	            -- apps/
@@ -62,10 +60,11 @@ There is only a `jshint` test. Also there is a `.travis.yml` file if you want to
 	            app.js
 	            controllers.js
 	            directives.js
-			-- templates
-				about.html
-				home.html
-	        -- index.html
+            -- less/
+            -- templates
+                about.html
+                home.html
+            -- index.html
         .gitignore
         .travis.yml
         Gruntfile.js
