@@ -18,42 +18,31 @@
 
     <body>
 
-        <div class="container">
-            <div class="row">
-                <div class="hidden-xs hidden-sm col-md-1 col-lg-2"></div>
-                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
-
-                    <!-- Header -->
-                    <div ng-controller="HeaderCtrl" class="navbar navbar-default navbar-static-top" role="navigation">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <a class="navbar-brand" ui-sref="home">Project Title</a>
-                            </div>
-                            <div class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li ng-class="{ active: isActive('/home') }"><a ui-sref="home">Home</a></li>
-                                    <li ng-class="{ active: isActive('/about') }"><a ui-sref="about">About</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Angular View -->
-                    <ui-view></ui-view>
-
-                    <!-- Footer -->
-                    <div class="footer">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-9">
-                            Footer Left
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-md-3 text-right">
-                            Footer Right
-                        </div>
-                    </div>
-
+        <nav ng-controller="HeaderCtrl" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" ui-sref="home">Project Title</a>
                 </div>
-                <div class="hidden-xs hidden-sm col-md-1 col-lg-2"></div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ng-class="{ active: isActive('/home') }"><a ui-sref="home">Home</a></li>
+                        <li ng-class="{ active: isActive('/about') }"><a ui-sref="about">About</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
             </div>
+        </nav>
+
+        <div class="container">
+
+            <!-- Angular View -->
+            <ui-view></ui-view>
+
         </div>
 
         <!-- Concat: app.js -->

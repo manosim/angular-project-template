@@ -1,10 +1,18 @@
 @import "../../node_modules/bootstrap/less/bootstrap.less";
 @import "../../node_modules/font-awesome/less/font-awesome.less";
 
+/* @group Colors */
+
+    @White: #FFF;
+    @Silver: #DEDEDE;
+
+/* @end Colors */
+
 
 /* @group Miscellaneous */
 
 body {
+    padding-top: 65px;
 
     ::selection {
         text-shadow: none;
@@ -34,24 +42,13 @@ body {
 /* @end Miscellaneous */
 
 
-/* @group Footer */
+/* @group Home Page */
 
-.footer {
-    padding: 25px 0;
+.home-page {
+
+    .img-responsive {
+        margin: 50px auto;
+    }
 }
 
-/* @end Footer */
-
-
-/* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-    body {
-        padding: 0;
-    }
-
-    .footer {
-        padding: 10px 0;
-    }
-
-}
+/* @end Home Page */
