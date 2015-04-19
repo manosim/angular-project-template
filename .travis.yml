@@ -8,6 +8,7 @@ before_install:
 
 install:
   - npm install
+  - grunt release
 
 before_script:
-  - grunt build
+  - npm test
