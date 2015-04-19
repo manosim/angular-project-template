@@ -20,5 +20,5 @@
   },
   "scripts": {
     "test": "grunt jshint"
-  },
+  }
 }
