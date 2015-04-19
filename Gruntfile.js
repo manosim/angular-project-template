@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     watch: {
       files: 'src/**/*.*',
-      tasks: ['jshint', 'less', 'copy']
+      tasks: ['build']
     },
 
     jshint: {
@@ -18,10 +18,17 @@ module.exports = function(grunt) {
         src: [
             'node_modules/angular/angular.js',
             'node_modules/angular-ui-router/release/angular-ui-router.js',
-            'node_modules/angular-filter/dist/angular-filter.js',
 
-            'src/js/*.js',
-            'src/js/**/*.js',
+            'src/js/app.js',
+
+            'src/js/controllers.js',
+            'src/js/controllers/*.js',
+
+            'src/js/services.js',
+            'src/js/services/*.js',
+
+            'src/js/directives.js',
+            'src/js/directives/*.js',
         ],
         dest: 'build/js/app.js'
       }
